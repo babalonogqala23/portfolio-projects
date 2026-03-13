@@ -4,110 +4,159 @@
 const educationsData = [
   {
     id: 1,
-    title: "B.Sc in Computer Science",
-    institution: "Your University Name",
-    duration: "(2016 - 2020)",
+    title: " Diploma in Software Development",
+    institution: "Rosebank College, Cape Town",
+    duration: "2026",
   },
   {
     id: 2,
-    title: "Full Stack Web Development",
-    institution: "Online Courses & Self Learning",
-    duration: "(2018 - Present)",
+    title: "Software Developer | Diploma + Web Development Certification",
+    institution: "Online Courses (Udemy)",
+    duration: "2026",
   },
 ];
 
+// const projectsData = [
+//   {
+//     id: 1,
+//     name: "AI Powered Financial App",
+//     description:
+//       "Me and my team built an AI-powered financial mobile application. I developed the API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for authentication. Built AI assistants using OpenAI latest model trained on our dataset.",
+//     tools: [
+//       "Express",
+//       "MongoDB",
+//       "OpenAI API",
+//       "AWS SES",
+//       "AWS S3",
+//       "Node Mailer",
+//       "Joi",
+//       "Puppeteer",
+//       "EC2",
+//       "PM2",
+//       "Nginx",
+//     ],
+//     role: "Backend Developer",
+//     code: "",
+//     demo: "",
+//   },
+//   {
+//     id: 2,
+//     name: "Travel Agency App",
+//     description:
+//       "I designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. Built with NextJS, Typescript, MUI, TailwindCSS, Google Maps, and React Slick. The app supports multiple languages and currencies.",
+//     tools: [
+//       "NextJS",
+//       "Tailwind CSS",
+//       "Google Maps",
+//       "NestJS",
+//       "TypeScript",
+//       "MySQL",
+//       "AWS S3",
+//       "Sun-Editor",
+//     ],
+//     role: "Full Stack Developer",
+//     code: "",
+//     demo: "",
+//   },
+//   {
+//     id: 3,
+//     name: "AI Powered Real Estate",
+//     description:
+//       "My team built an AI-based real estate app using Replicate API and OpenAI. Used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose for the API. NextJS, Formik, and TailwindCSS for the UI. Added role-based auth, subscription plans, and Stripe payments.",
+//     tools: [
+//       "React",
+//       "Bootstrap",
+//       "SCSS",
+//       "Stripe",
+//       "Express",
+//       "TypeScript",
+//       "MongoDB",
+//       "Azure Blob",
+//       "OpenAI API",
+//       "Replicate AI",
+//     ],
+//     role: "Full Stack Developer",
+//     code: "",
+//     demo: "",
+//   },
+//   {
+//     id: 4,
+//     name: "Newsroom Management",
+//     description:
+//       "A newspaper management dashboard application. I worked on the front-end using NextJS, Material UI, Redux, Calendar, and other npm libraries. Used React Redux for state management and React-hook-form with Sun Editor for forms.",
+//     tools: ["NextJS", "Material UI", "Redux", "Sun Editor", "Calendar"],
+//     role: "Full Stack Developer",
+//     code: "",
+//     demo: "",
+//   },
+// ];
 const projectsData = [
   {
     id: 1,
-    name: "AI Powered Financial App",
+    name: "Shopdazz App",
     description:
-      "Me and my team built an AI-powered financial mobile application. I developed the API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for authentication. Built AI assistants using OpenAI latest model trained on our dataset.",
-    tools: [
-      "Express",
-      "MongoDB",
-      "OpenAI API",
-      "AWS SES",
-      "AWS S3",
-      "Node Mailer",
-      "Joi",
-      "Puppeteer",
-      "EC2",
-      "PM2",
-      "Nginx",
-    ],
-    role: "Backend Developer",
+      "A full stack e-commerce app with an ADMIN panel, Stripe and COD payment methods, built with Next.js, Clerk authentication, MongoDB, Inngest and Tailwind CSS.",
+    tools: ["Next.js", "Tailwind CSS", "MongoDB", "Clerk", "Stripe", "Inngest"],
+    role: "Full Stack Developer",
     code: "",
-    demo: "",
+    demo: "https://shopdazz.vercel.app/",
   },
   {
     id: 2,
-    name: "Travel Agency App",
+    name: "TripBuddy AI",
     description:
-      "I designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. Built with NextJS, Typescript, MUI, TailwindCSS, Google Maps, and React Slick. The app supports multiple languages and currencies.",
+      "A full stack AI-powered travel planning app built with React.js, Gemini AI, Firebase, Google Auth, Google Places and Tailwind CSS. A complete AI SaaS app with trip generation.",
     tools: [
-      "NextJS",
+      "React.js",
       "Tailwind CSS",
-      "Google Maps",
-      "NestJS",
-      "TypeScript",
-      "MySQL",
-      "AWS S3",
-      "Sun-Editor",
+      "Firebase",
+      "Gemini AI",
+      "Google Auth",
+      "Google Places",
     ],
     role: "Full Stack Developer",
     code: "",
-    demo: "",
+    demo: "https://tripbuddy-ai.vercel.app/",
   },
   {
     id: 3,
-    name: "AI Powered Real Estate",
+    id: 1,
+    name: "E-Commerce Website",
     description:
-      "My team built an AI-based real estate app using Replicate API and OpenAI. Used Express, Typescript, OpenAI, Replicate, Stripe, and Mongoose for the API. NextJS, Formik, and TailwindCSS for the UI. Added role-based auth, subscription plans, and Stripe payments.",
-    tools: [
-      "React",
-      "Bootstrap",
-      "SCSS",
-      "Stripe",
-      "Express",
-      "TypeScript",
-      "MongoDB",
-      "Azure Blob",
-      "OpenAI API",
-      "Replicate AI",
-    ],
-    role: "Full Stack Developer",
-    code: "",
-    demo: "",
+      "A fully responsive multi-page e-commerce website with a shopping cart, product pages, blog, about and contact pages. Built with pure HTML, CSS and JavaScript — no frameworks needed.",
+    tools: ["HTML5", "CSS3", "JavaScript"],
+    role: "Frontend Developer",
+    code: "https://github.com/babalonogqala23/Build-and-Deploy-Ecommerce-Website-main",
+    demo: "https://babalonogqala23.github.io/Build-and-Deploy-Ecommerce-Website-main/",
   },
   {
     id: 4,
-    name: "Newsroom Management",
+    name: "Barber Website",
     description:
-      "A newspaper management dashboard application. I worked on the front-end using NextJS, Material UI, Redux, Calendar, and other npm libraries. Used React Redux for state management and React-hook-form with Sun Editor for forms.",
-    tools: ["NextJS", "Material UI", "Redux", "Sun Editor", "Calendar"],
-    role: "Full Stack Developer",
-    code: "",
-    demo: "",
+      "A clean and modern barbershop website with a services section, filterable pricing, photo gallery, appointment booking form and newsletter subscription. Built with HTML, CSS and JavaScript.",
+    tools: ["HTML5", "CSS3", "JavaScript", "Ion Icons", "Flaticon"],
+    role: "Frontend Developer",
+    code: "https://github.com/babalonogqala23/Barber-website",
+    demo: "https://babalonogqala23.github.io/Barber-website/",
   },
 ];
-
 const skillsData = [
   { name: "JavaScript", icon: "fab fa-js" },
-  { name: "TypeScript", icon: "fab fa-js-square" },
+  // { name: "TypeScript", icon: "fab fa-js-square" },
   { name: "React", icon: "fab fa-react" },
-  { name: "Next JS", icon: "fas fa-n" },
-  { name: "Node.js", icon: "fab fa-node-js" },
-  { name: "Python", icon: "fab fa-python" },
+  // { name: "Next JS", icon: "fas fa-n" },
+  // { name: "Node.js", icon: "fab fa-node-js" },
+
   { name: "Docker", icon: "fab fa-docker" },
-  { name: "AWS", icon: "fab fa-aws" },
+  // { name: "AWS", icon: "fab fa-aws" },
   { name: "Git", icon: "fab fa-git-alt" },
   { name: "HTML", icon: "fab fa-html5" },
   { name: "CSS", icon: "fab fa-css3-alt" },
-  { name: "Linux", icon: "fab fa-linux" },
-  { name: "MongoDB", icon: "fas fa-database" },
+
+  // { name: "MongoDB", icon: "fas fa-database" },
   { name: "MySQL", icon: "fas fa-database" },
   { name: "Firebase", icon: "fas fa-fire" },
-  { name: "GraphQL", icon: "fas fa-project-diagram" },
+  // { name: "GraphQL", icon: "fas fa-project-diagram" },
   { name: "Figma", icon: "fab fa-figma" },
   { name: "WordPress", icon: "fab fa-wordpress" },
 ];
@@ -213,6 +262,25 @@ function renderSkills() {
     track.appendChild(chip);
   });
 }
+const learningData = [
+  { name: "Next.js", icon: "fas fa-n" },
+  { name: "MongoDB", icon: "fas fa-database" },
+  { name: "TypeScript", icon: "fab fa-js-square" },
+  { name: "Node.js", icon: "fab fa-node-js" },
+];
+
+function renderLearning() {
+  var track = document.getElementById("learningTrack");
+  if (!track) return;
+  var all = learningData.concat(learningData); // double for infinite scroll
+  all.forEach(function (item) {
+    var chip = document.createElement("div");
+    chip.className = "skill-chip";
+    chip.innerHTML =
+      '<i class="' + item.icon + '"></i><span>' + item.name + "</span>";
+    track.appendChild(chip);
+  });
+}
 
 /* =============================================
    RENDER PROJECTS
@@ -252,13 +320,16 @@ function renderProjects() {
           codeBtn +
           "</div>"
         : "";
-
     var el = document.createElement("div");
     el.className = "project-sticky-card fade-up";
+
     el.style.top = 2.5 + index * 0.5 + "rem";
     el.style.transitionDelay = index * 0.1 + "s";
+    var projectUrl = project.demo || project.code || "#";
     el.innerHTML =
-      '<div class="proj-card">' +
+      '<div class="proj-card" onclick="window.open(\'' +
+      projectUrl +
+      "', '_blank')\" style=\"cursor:pointer;\">" +
       '<div class="proj-card-toplines">' +
       '<div class="proj-topline-l"></div>' +
       '<div class="proj-topline-r"></div>' +
@@ -335,79 +406,79 @@ function renderEducation() {
 /* =============================================
    RENDER BLOG
 ============================================= */
-function renderBlog() {
-  var grid = document.getElementById("blogGrid");
-  if (!grid) return;
+// function renderBlog() {
+//   var grid = document.getElementById("blogGrid");
+//   if (!grid) return;
 
-  fetch("https://dev.to/api/articles?username=said7388&per_page=9")
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (blogs) {
-      var withImages = blogs.filter(function (b) {
-        return b.cover_image;
-      });
-      withImages.sort(function () {
-        return Math.random() - 0.5;
-      });
-      withImages = withImages.slice(0, 6);
+//   fetch("https://dev.to/api/articles?username=said7388&per_page=9")
+//     .then(function (res) {
+//       return res.json();
+//     })
+//     .then(function (blogs) {
+//       var withImages = blogs.filter(function (b) {
+//         return b.cover_image;
+//       });
+//       withImages.sort(function () {
+//         return Math.random() - 0.5;
+//       });
+//       withImages = withImages.slice(0, 6);
 
-      if (!withImages.length) {
-        grid.innerHTML =
-          '<div class="blog-loading"><p>No blog posts found.</p></div>';
-        return;
-      }
+//       if (!withImages.length) {
+//         grid.innerHTML =
+//           '<div class="blog-loading"><p>No blog posts found.</p></div>';
+//         return;
+//       }
 
-      grid.innerHTML = "";
-      withImages.forEach(function (blog, i) {
-        var card = document.createElement("div");
-        card.className = "blog-card fade-up";
-        card.style.transitionDelay = i * 0.08 + "s";
-        var comments =
-          blog.comments_count > 0
-            ? "<span>&#128172; " + blog.comments_count + "</span>"
-            : "";
-        card.innerHTML =
-          '<div class="blog-img-wrap">' +
-          '<img src="' +
-          blog.cover_image +
-          '" alt="' +
-          blog.title +
-          '" class="blog-img" loading="lazy" />' +
-          "</div>" +
-          '<div class="blog-body">' +
-          '<div class="blog-meta">' +
-          "<span>" +
-          timeConverter(blog.published_at) +
-          "</span>" +
-          '<div class="blog-reactions">' +
-          "<span>&#9829; " +
-          blog.public_reactions_count +
-          "</span>" +
-          comments +
-          "</div>" +
-          "</div>" +
-          '<a href="' +
-          blog.url +
-          '" target="_blank" class="blog-title">' +
-          blog.title +
-          "</a>" +
-          '<p class="blog-read">' +
-          blog.reading_time_minutes +
-          " min read</p>" +
-          '<p class="blog-desc">' +
-          (blog.description || "") +
-          "</p>" +
-          "</div>";
-        grid.appendChild(card);
-        observer.observe(card);
-      });
-    })
-    .catch(function () {
-      grid.innerHTML =
-        '<div class="blog-loading"><p>Could not load blog posts.</p></div>';
-    });
-}
+//       grid.innerHTML = "";
+//       withImages.forEach(function (blog, i) {
+//         var card = document.createElement("div");
+//         card.className = "blog-card fade-up";
+//         card.style.transitionDelay = i * 0.08 + "s";
+//         var comments =
+//           blog.comments_count > 0
+//             ? "<span>&#128172; " + blog.comments_count + "</span>"
+//             : "";
+//         card.innerHTML =
+//           '<div class="blog-img-wrap">' +
+//           '<img src="' +
+//           blog.cover_image +
+//           '" alt="' +
+//           blog.title +
+//           '" class="blog-img" loading="lazy" />' +
+//           "</div>" +
+//           '<div class="blog-body">' +
+//           '<div class="blog-meta">' +
+//           "<span>" +
+//           timeConverter(blog.published_at) +
+//           "</span>" +
+//           '<div class="blog-reactions">' +
+//           "<span>&#9829; " +
+//           blog.public_reactions_count +
+//           "</span>" +
+//           comments +
+//           "</div>" +
+//           "</div>" +
+//           '<a href="' +
+//           blog.url +
+//           '" target="_blank" class="blog-title">' +
+//           blog.title +
+//           "</a>" +
+//           '<p class="blog-read">' +
+//           blog.reading_time_minutes +
+//           " min read</p>" +
+//           '<p class="blog-desc">' +
+//           (blog.description || "") +
+//           "</p>" +
+//           "</div>";
+//         grid.appendChild(card);
+//         observer.observe(card);
+//       });
+//     })
+//     .catch(function () {
+//       grid.innerHTML =
+//         '<div class="blog-loading"><p>Could not load blog posts.</p></div>';
+//     });
+// }
 
 /* =============================================
    CONTACT FORM
@@ -469,7 +540,7 @@ function initContactForm() {
         "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message,
       );
       window.location.href =
-        "mailto:abusaid7388@gmail.com?subject=" + subject + "&body=" + body;
+        "mailto:babalonogqala23@gmail.com?subject=" + subject + "&body=" + body;
 
       btnText.style.display = "inline-flex";
       btnLoad.style.display = "none";
@@ -492,6 +563,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderSkills();
   renderProjects();
   renderEducation();
+  renderLearning();
   renderBlog();
   initContactForm();
   initGlowEffect();
