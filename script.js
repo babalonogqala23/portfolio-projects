@@ -91,16 +91,6 @@ const educationsData = [
 //   },
 // ];
 const projectsData = [
-  // {
-  //   id: 1,
-  //   name: "Shopdazz App",
-  //   description:
-  //     "A full stack e-commerce app with an ADMIN panel, Stripe and COD payment methods, built with Next.js, Clerk authentication, MongoDB, Inngest and Tailwind CSS.",
-  //   tools: ["Next.js", "Tailwind CSS", "MongoDB", "Clerk", "Stripe", "Inngest"],
-  //   role: "Full Stack Developer",
-  //   code: "",
-  //   demo: "https://shopdazz.vercel.app/",
-  // },
   {
     id: 1,
     name: "TripBuddy AI",
@@ -120,6 +110,16 @@ const projectsData = [
   },
   {
     id: 2,
+    name: "Contract Monthly Claim System (CMCS)",
+    description:
+      "A WPF desktop application for managing and approving monthly contractor claims. Features a centralized data sharing mechanism between windows, role-based approval workflow, and real-time UI updates using ObservableCollection and data binding.",
+    tools: ["C#", "WPF", "XAML", ".NET", "ObservableCollection"],
+    role: "Full Stack Developer",
+    code: "https://github.com/babalonogqala23/portfolio-of-evidence.git",
+    demo: "",
+  },
+  {
+    id: 3,
 
     name: "E-Commerce Website",
     description:
@@ -130,7 +130,7 @@ const projectsData = [
     demo: "https://babalonogqala23.github.io/Build-and-Deploy-Ecommerce-Website-main/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Barber Website",
     description:
       "A clean and modern barbershop website with a services section, filterable pricing, photo gallery, appointment booking form and newsletter subscription. Built with HTML, CSS and JavaScript.",
