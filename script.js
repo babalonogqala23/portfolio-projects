@@ -91,18 +91,18 @@ const educationsData = [
 //   },
 // ];
 const projectsData = [
+  // {
+  //   id: 1,
+  //   name: "Shopdazz App",
+  //   description:
+  //     "A full stack e-commerce app with an ADMIN panel, Stripe and COD payment methods, built with Next.js, Clerk authentication, MongoDB, Inngest and Tailwind CSS.",
+  //   tools: ["Next.js", "Tailwind CSS", "MongoDB", "Clerk", "Stripe", "Inngest"],
+  //   role: "Full Stack Developer",
+  //   code: "",
+  //   demo: "https://shopdazz.vercel.app/",
+  // },
   {
     id: 1,
-    name: "Shopdazz App",
-    description:
-      "A full stack e-commerce app with an ADMIN panel, Stripe and COD payment methods, built with Next.js, Clerk authentication, MongoDB, Inngest and Tailwind CSS.",
-    tools: ["Next.js", "Tailwind CSS", "MongoDB", "Clerk", "Stripe", "Inngest"],
-    role: "Full Stack Developer",
-    code: "",
-    demo: "https://shopdazz.vercel.app/",
-  },
-  {
-    id: 2,
     name: "TripBuddy AI",
     description:
       "A full stack AI-powered travel planning app built with React.js, Gemini AI, Firebase, Google Auth, Google Places and Tailwind CSS. A complete AI SaaS app with trip generation.",
@@ -119,8 +119,8 @@ const projectsData = [
     demo: "https://tripbuddy-ai.vercel.app/",
   },
   {
-    id: 3,
-    id: 1,
+    id: 2,
+    
     name: "E-Commerce Website",
     description:
       "A fully responsive multi-page e-commerce website with a shopping cart, product pages, blog, about and contact pages. Built with pure HTML, CSS and JavaScript — no frameworks needed.",
@@ -130,11 +130,11 @@ const projectsData = [
     demo: "https://babalonogqala23.github.io/Build-and-Deploy-Ecommerce-Website-main/",
   },
   {
-    id: 4,
+    id: 3,
     name: "Barber Website",
     description:
       "A clean and modern barbershop website with a services section, filterable pricing, photo gallery, appointment booking form and newsletter subscription. Built with HTML, CSS and JavaScript.",
-    tools: ["HTML5", "CSS3", "JavaScript", "Ion Icons", "Flaticon"],
+    tools: ["HTML5", "CSS3", "Ion Icons", "Flaticon"],
     role: "Frontend Developer",
     code: "https://github.com/babalonogqala23/Barber-website",
     demo: "https://babalonogqala23.github.io/Barber-website/",
