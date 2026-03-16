@@ -120,7 +120,7 @@ const projectsData = [
   },
   {
     id: 2,
-    
+
     name: "E-Commerce Website",
     description:
       "A fully responsive multi-page e-commerce website with a shopping cart, product pages, blog, about and contact pages. Built with pure HTML, CSS and JavaScript — no frameworks needed.",
@@ -147,7 +147,6 @@ const skillsData = [
   // { name: "Next JS", icon: "fas fa-n" },
   // { name: "Node.js", icon: "fab fa-node-js" },
 
-  { name: "Docker", icon: "fab fa-docker" },
   // { name: "AWS", icon: "fab fa-aws" },
   { name: "Git", icon: "fab fa-git-alt" },
   { name: "HTML", icon: "fab fa-html5" },
@@ -264,7 +263,7 @@ function renderSkills() {
 }
 const learningData = [
   { name: "Next.js", icon: "fas fa-n" },
-  { name: "MongoDB", icon: "fas fa-database" },
+  // { name: "MongoDB", icon: "fas fa-database" },
   { name: "TypeScript", icon: "fab fa-js-square" },
   { name: "Node.js", icon: "fab fa-node-js" },
 ];
@@ -495,6 +494,8 @@ function initContactForm() {
   var btnText = document.getElementById("btnText");
   var btnLoad = document.getElementById("btnLoading");
 
+  emailjs.init("qm3yHMn-654-QHMDN");
+
   function isValidEmail(v) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
   }
@@ -534,28 +535,33 @@ function initContactForm() {
     btnLoad.style.display = "inline-flex";
     btn.disabled = true;
 
-    setTimeout(function () {
-      var subject = encodeURIComponent("New Message From " + name);
-      var body = encodeURIComponent(
-        "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message,
-      );
-      window.location.href =
-        "mailto:babalonogqala23@gmail.com?subject=" + subject + "&body=" + body;
-
-      btnText.style.display = "inline-flex";
-      btnLoad.style.display = "none";
-      btn.disabled = false;
-      toast.classList.add("visible");
-      setTimeout(function () {
-        toast.classList.remove("visible");
-      }, 4000);
-      nameEl.value = "";
-      emailEl.value = "";
-      msgEl.value = "";
-    }, 800);
+    emailjs
+      .send("service_h9uopav", "template_1x0hohm", {
+        from_name: name,
+        from_email: email,
+        message: message,
+      })
+      .then(function () {
+        btnText.style.display = "inline-flex";
+        btnLoad.style.display = "none";
+        btn.disabled = false;
+        toast.classList.add("visible");
+        setTimeout(function () {
+          toast.classList.remove("visible");
+        }, 4000);
+        nameEl.value = "";
+        emailEl.value = "";
+        msgEl.value = "";
+      })
+      .catch(function (error) {
+        console.error("EmailJS error:", error);
+        btnText.style.display = "inline-flex";
+        btnLoad.style.display = "none";
+        btn.disabled = false;
+        alert("Something went wrong. Please try again.");
+      });
   });
 }
-
 /* =============================================
    INIT
 ============================================= */
@@ -564,7 +570,6 @@ document.addEventListener("DOMContentLoaded", function () {
   renderProjects();
   renderEducation();
   renderLearning();
-  renderBlog();
   initContactForm();
   initGlowEffect();
   document.querySelectorAll(".fade-up").forEach(function (el) {
